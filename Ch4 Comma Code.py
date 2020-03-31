@@ -1,6 +1,5 @@
 spam = ['apples', 'bananas', 'tofu', 'cats']
 counter = 1
-print(len(spam))
 if len(spam) == 0:
     print("List is empty")
 else:
