@@ -30,7 +30,7 @@ def isValidChessBoard(pieces):
             p = str(board_numbers[z-1])+str(board_letters[y-1])
             squares.append(p)
     
-    #Check all pieces positions are valid
+    # Check all pieces positions are valid
     condition = all(elem in squares for elem in pieces.keys())
     if condition == False:
         sys.exit("ERROR: Some pieces are not in valid positions!")
@@ -63,6 +63,7 @@ def isValidChessBoard(pieces):
     condition = pieces_on_board["bking"]==1 and pieces_on_board["wking"]==1
     if condition == False:
         sys.exit("ERROR: King(s) Missing!")
+        
     print ("Chessboard is Valid!")  
     
 isValidChessBoard(current_board)
